@@ -1,13 +1,13 @@
-const apiKey = 'e2ff1b64531b9a7afaf95949'; // Your API key
+const apiKey = 'e2ff1b64531b9a7afaf95949'; // My API key
 const apiEndpoint = 'https://v6.exchangerate-api.com/v6/' + apiKey + '/latest/USD';
 
 const amountInput = document.getElementById('amount');
 const fromCurrencySelect = document.getElementById('fromCurrency');
-const toCurrencySelect = document.getElementById('toCurrency'); // Add a reference for the target currency select
+const toCurrencySelect = document.getElementById('toCurrency'); // Added a reference for the target currency select
 const convertButton = document.getElementById('convert');
 const resultOutput = document.getElementById('result');
 
-// Populate both 'fromCurrency' and 'toCurrency' select elements with currency options
+// Populated both 'fromCurrency' and 'toCurrency' select elements with currency options
 fetch(apiEndpoint)
   .then((response) => response.json())
   .then((data) => {
@@ -19,7 +19,7 @@ fetch(apiEndpoint)
       option1.text = currency;
       fromCurrencySelect.appendChild(option1);
 
-      // Populate 'toCurrency' select
+      // Populated 'toCurrency' select
       const option2 = document.createElement('option');
       option2.value = currency;
       option2.text = currency;

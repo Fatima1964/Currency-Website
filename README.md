@@ -39,7 +39,7 @@ This repository contains a simple web-based currency converter application. User
 
 ## Dependencies
 
-The project uses the ExchangeRate API to fetch exchange rate data. You need to obtain an API key to make it work. Replace the `apiKey` variable in `currency.js` with your own API key.  Also logo was designed in Canva.
+The project uses the ExchangeRate Vhttps://www.exchangerate-api.com/ API to fetch exchange rate data. You need to obtain an API key to make it work. Replace the `apiKey` variable in `currency.js` with your own API key.  Also logo was designed in Canva https://www.canva.com/.
 
 ```javascript
 const apiKey = 'your-api-key'; 
