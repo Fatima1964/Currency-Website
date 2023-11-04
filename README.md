@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # Currency-Exchange# Currency-Website
+=======
+# Currency-Website
+>>>>>>> 7f96cf2e1c55fc6ca920fb0b5412c87e5c2a5c24
 # Currency Converter Readme
 
 This repository contains a simple web-based currency converter application. Users can input an amount, select the source currency, choose the target currency, and click the "Convert" button to get the converted amount. Additionally, there is a "Reset" button to clear the input fields and start over.
@@ -39,10 +43,17 @@ This repository contains a simple web-based currency converter application. User
 
 ## Dependencies
 
+<<<<<<< HEAD
 The project uses the ExchangeRate Vhttps://www.exchangerate-api.com/ API to fetch exchange rate data. You need to obtain an API key to make it work. Replace the `apiKey` variable in `currency.js` with your own API key.  Also logo was designed in Canva https://www.canva.com/.
 
 ```javascript
 const apiKey = 'your-api-key'; 
+=======
+The project uses the ExchangeRate API to fetch exchange rate data. You need to obtain an API key to make it work. Replace the `apiKey` variable in `currency.js` with your own API key.
+
+```javascript
+const apiKey = 'your-api-key'; // Replace with your API key
+>>>>>>> 7f96cf2e1c55fc6ca920fb0b5412c87e5c2a5c24
 ```
 
 ## Customization
@@ -59,4 +70,8 @@ This project is open-source and available under the [MIT License](LICENSE).
 
 ---
 
+<<<<<<< HEAD
 Enjoy using the Currency Converter! If you have any questions or encounter any issues, please don't hesitate to reach out to the project contributors.
+=======
+Enjoy using the Currency Converter! If you have any questions or encounter any issues, please don't hesitate to reach out to the project contributors.
+>>>>>>> 7f96cf2e1c55fc6ca920fb0b5412c87e5c2a5c24
