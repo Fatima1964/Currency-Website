@@ -1,0 +1,119 @@
+body {
+  margin-top: 0px;
+
+}
+header {
+    background-color: rgb(11, 11, 10);
+    padding: 20px 0;
+    margin-bottom: 50px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display:inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 30px;
+    margin-left: 250px;
+    
+    
+}
+
+nav ul li a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-image: url('back2.jpg'); /* Replace with the image URL */
+}
+
+/* Style the container */
+.converter {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    background: conic-gradient(#0f0f10, #0f1011, #c76af2);
+    border-radius: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    box-shadow: 0 0 60px rgba(20, 15, 15, 0.6);
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+    font-size: 28px;
+  
+    
+  }
+  
+  /* Style the title */
+  h1 {
+    font-size: 24px;
+    color: #f0f4f7;
+    margin-bottom: 20px;
+  }
+  
+  /* Style the input field and selects */
+  input[type="number"],
+  select {
+    width: 45%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 2px solid #007BFF;
+    border-radius: 5px;
+    font-size: 16px;
+    font-style: bold;
+  }
+  
+  /* Style the 'Convert' button */
+  button {
+    background-color: #0b61bd;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 18px;
+  }
+  
+  /* Style the result output */
+  p#result {
+    display: flex;
+    width: 300px;
+    height: 300px;
+    background: conic-gradient(#0f0f10, #0f1011, #c76af2);
+    border-radius: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+    font-size: 26px;
+    color:#f0f4f7
+  }
+  #reset {
+    margin-top: 20px;
+  }
+  #result:hover {
+    transform: rotate(20deg);
+  }
+  .logo {
+    display:flex;
+    margin-left: 42%;
+    transition: transform 0.3s; 
+  }
+  .logo:hover {
+    transform: scale(1.4);
+  }
