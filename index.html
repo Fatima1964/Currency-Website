@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,20 +11,32 @@
     <header>
         <nav>
             <ul>
-                <li><a href="about.html">About Us</a></li>
-                <li><a href="contact.html">Contact Us</a></li>
-                <img class="logo" src="logo.png" width="175px" height="100px">
+                <h1>Global Currency Exchange</h1>
+                    <div class="logo">GCE</div>
+                <header>
+                    <nav>
+                        <ul>
+                            <a href="#about-us"><li></li></a>
+                            <a href="#contact"><li></li></a> <!-- Added this line -->
+                        </ul>
+                    </nav>
+                </header>
+                
             </ul>
         </nav>
-    </header>
-    <div class="container">
-        <form id="submitForm">
-          <input type="text" id="name" placeholder="Name">
-          <input type="email" id="email" placeholder="Email">
-          <button type="button" id="submit">Submit</button>
-        </form>
-      </div>
-      
+            </header>
+            <header class="split-header">
+                <div class="left">
+                    <h1>About Us</h1>
+                </div>
+                <div class="right">
+                    <h1>Contact Us</h1>
+                </div>
+            </header>
+    <div class="welcome-container" id="about-us">Global Currency Exchange!
+        <p class="welcome-message">"Welcome to Global Currency Exchange! Your trusted partner for seamless currency conversion. Whether you're traveling, investing, or sending money abroad, we've got your currency needs covered!"</p>
+    </div>
+
     <div class="converter">
         <h1>Currency Converter</h1>
         <input type="number" id="amount" placeholder="Amount">
@@ -34,12 +45,21 @@
         <button id="convert">Convert</button>
         <button id="reset">Reset</button>
     </div>
+
     <div class="exchange">
         <p id="result">Conversion</p>
     </div>
 
-    
-    
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <form id="submitForm">
+          <input type="text" id="name" required placeholder="*Name:">
+          <input type="email" id="email" required placeholder="*Email:">
+          <textarea type="message" rows="4" col="10" id="message" required placeholder="*Message:"></textarea>
+          <button type="button" id="submit">Submit</button>
+        </form>
+      </div>
+  
     <script src="currency.js"></script>
 </body>
 </html>
