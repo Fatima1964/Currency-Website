@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="notepad.css">
+    <title>Notepad</title>
+</head>
+<body>
+    <div class="container">
+        <h1>My Notepad</h1>
+        <div class="notepad">
+            <div class="left-panel">
+                <textarea id="note-text" rows="5" placeholder="Enter your note here..."></textarea>
+                <button id="save">Save Note</button>
+            </div>
+            <div class="right-panel">
+                <div id="notes-list">
+                    <!-- Notes will be displayed here -->
+                </div>
+            </div>
+        </div>
+        <div class="reminder">
+            
+            <label for="reminder-date">Set a Reminder:</label>
+            <input type="datetime-local" id="reminder-date">
+            <button id="set-reminder">Set Reminder</button>
+        </div>
+        <div class="notification" id="reminder-message">This is your reminder</div>
+
+             
+        <footer>
+            <a class="home-icon" href="index.html">
+                <img src="images/homeicon.png" alt="home icon" width="125px" height="125px"></a>
+        </footer> 
+           
+    <script src="notepad.js"></script>
+    <script src="reminder.js"></script>
+
+</body>
+</html>

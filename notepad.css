@@ -1,0 +1,134 @@
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    background:url(map.jpg);
+    color: #ffffff;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background-color: #bb9292;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    text-align: left;
+    max-width: 150em;
+    max-height: 100em;
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 24px;
+    color: #4d473f;
+    text-align: center;
+}
+
+textarea {
+    width: 95%;
+    padding: 15px;
+    margin: 10px 0;
+    border: 2px solid #e7daca;
+    border-radius: 8px;
+    font-size: 18px;
+    resize: none;
+    background-color: #1a1a1a;
+    color: #ffffff;
+}
+
+button {
+    
+    background-color: #7a756d;
+    color: #000;
+    border: none;
+    border-radius: 8px;
+    padding: 15px 15px;
+    cursor: pointer;
+    font-size: 20px;
+    margin-left: 15em;
+}
+
+button:hover {
+    background-color: #e6e1d8;
+}
+
+#notes-list {
+    text-align: left;
+    margin-top: 1em;
+}
+
+#notes-list p {
+    background-color: #1a1a1a;
+    padding: 15px;
+    border: 2px solid #f7f4ef;
+    border-radius: 8px;
+    margin: 20px 0;
+    font-size: 18px;
+    color: #ffffff;
+}
+.home-icon {
+    position:absolute;
+    margin-left: 15em;
+    margin-top: 4em;
+}
+
+/* Style the reminder container */
+.reminder {
+    margin-top: 50px;
+    text-align: center;
+}
+
+/* Style the date and time input field */
+#reminder-date {
+    width: 250px;
+    padding: 12px;
+    font-size: 16px;
+    border: 2px solid #1c1e1f;
+    border-radius: 5px;
+}
+
+/* Style the set reminder button */
+#set-reminder {
+    background-color: #847484;
+    color: #080404;
+    border: none;
+    padding: 12px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-left: 20px;
+}
+
+#set-reminder:hover {
+    background-color: #7e697e;
+}
+
+/* Style the notification container */
+.notification {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: #1170d6;
+    color: #fff;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transform: scale(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Style the notification appearance when active */
+.notification.active {
+    transform: scale(1);
+}
+
+.reminder {
+    position:absolute;
+    margin-bottom: 1em;
+    margin-left: 2em;
+    color:#000;
+}

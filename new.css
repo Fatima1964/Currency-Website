@@ -154,11 +154,12 @@ h1 {
 }
 
 /* Style for buttons on hover */
-.container button {
+#submit {
     background-color: #2f77c4;
     color: #f0eaea;
     cursor: pointer;
     transition: background-color 0.3s;
+    padding: 20px 20px;
 }
 
 /* Hover effect for buttons */
@@ -198,8 +199,8 @@ button:hover {
 /* Style for the result output */
 p#result {
     display: flex;
-    width: 350px;
-    height: 125px;
+    width: 15em;
+    height: 4em;
     background: conic-gradient(#0f0f10);
     border-radius: 50%;
     flex-direction: column;
@@ -225,4 +226,5 @@ p#result {
 #result:hover {
     transform: rotate(20deg);
 }
+
 
