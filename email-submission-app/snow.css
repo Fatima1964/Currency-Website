@@ -1,0 +1,38 @@
+.snow1 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    animation: snowfall linear 10s infinite;
+    margin-left: 40px;
+    background: url(snow.png)
+  }
+  
+  @keyframes snowfall {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(0);
+    }
+  }
+  .snow2 {
+    position: relative;
+    width: 10px;
+    height: 10px;
+    background: #fff;
+    border-radius: 50%;
+    animation: snowfall linear 10s infinite;
+    margin-left: 80px;
+    background: url(snow.png)
+  }
+  
+  @keyframes snowfall {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(0);
+    }
+  }

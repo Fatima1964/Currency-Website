@@ -1,0 +1,141 @@
+/* Set the background and style for the entire page */
+body {
+    margin: 0;
+    overflow: hidden;
+    background-color: #000; /* Black background */
+}
+
+/* Style for the header at the top of the page */
+.header {
+    background-color: white; /* White header background */
+    color: black; /* Black font color */
+    text-align: center;
+    padding: 20px;
+    font-size: 22px;
+}
+
+/* Remove margins for the header's h1 element */
+.header h1 {
+    margin: 0;
+}
+
+/* Style for header links */
+.header-links {
+    margin-top: 10px;
+}
+
+/* Style for header link elements */
+.header-links a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+}
+
+/* Create a container for snowfall and clouds */
+.snowfall-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Prevent interaction with snowfall elements */
+}
+
+/* Style for the cloud elements */
+.cloud {
+    position: absolute;
+    width: 200px; /* Adjust the width and height for the clouds */
+    height: 100px;
+    background-image: url('cloud.png'); /* Replace 'snow.png' with your cloud image */
+    background-size: cover;
+    animation: cloudMove linear 9s infinite; /* Adjust the animation as needed */
+}
+
+/* Animation for the first cloud */
+@keyframes cloudMove {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(500%);
+    }
+}
+
+/* Style for the second cloud */
+.cloud2 {
+    position: absolute;
+    width: 200px; /* Adjust the width and height for the clouds */
+    height: 100px;
+    background-image: url('cloud.png'); /* Replace 'snow.png' with your cloud image */
+    background-size: cover;
+    animation: cloud2Move linear 12s infinite; /* Adjust the animation as needed */
+}
+
+/* Animation for the second cloud */
+@keyframes cloud2Move {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(500%);
+    }
+}
+
+/* Style for the third cloud */
+.cloud3 {
+    position: absolute;
+    width: 200px; /* Adjust the width and height for the clouds */
+    height: 100px;
+    background-image: url('cloud.png'); /* Replace 'snow.png' with your cloud image */
+    background-size: cover;
+    animation: cloud3Move linear 15s infinite; /* Adjust the animation as needed */
+}
+
+/* Animation for the third cloud */
+@keyframes cloud3Move {
+    0% {
+        transform: translateX(-20%);
+    }
+    100% {
+        transform: translateX(500%);
+    }
+}
+
+/* Style for the airplane element */
+.airplane {
+    position: absolute;
+    right: -200px; /* Start it off-screen to the right */
+    width: 200px;
+    height: 100px;
+    background-image: url('airplane.png');
+    background-size: cover;
+    animation: airplaneMove linear 30s infinite; /* Set animation duration and 'infinite' iteration */
+}
+
+/* Animation for the airplane element */
+@keyframes airplaneMove {
+    0% {
+        right: -200px; /* Start off-screen to the right */
+    }
+    100% {
+        right: calc(100% + 200px); /* Move it to the left, off-screen */
+    }
+}
+
+/* Style for the snowflake elements */
+.snowflake {
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    background-image: url('snow.png'); /* Replace 'snow.png' with your snowflake image */
+    background-size: cover;
+    animation: snowfall linear 10s infinite;
+}
+
+/* Animation for the snowfall (falling snowflakes) */
+@keyframes snowfall {
+    0% {
+        transform: translateY(0) translateX(0);
+    }
+    100% {
+        transform: translateY(100vh) translateX(0);
+    }
+}

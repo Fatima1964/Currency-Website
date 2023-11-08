@@ -1,57 +1,76 @@
-# Currency-Website
-# Currency Converter Readme
+# Global Currency Exchange Website
 
-This repository contains a simple web-based currency converter application. Users can input an amount, select the source currency, choose the target currency, and click the "Convert" button to get the converted amount. Additionally, there is a "Reset" button to clear the input fields and start over.
+**Global Currency Exchange** is a website designed for currency conversion and information. It offers a user-friendly interface for converting different currencies and provides information about the company. The website features a unique design with snowfall and cloud animations for an engaging user experience.
 
-## Project Files
+## Table of Contents
 
-- **index.html**: This is the main HTML file that structures the currency converter web page. It includes the necessary HTML elements for the application.
-
-- **currency.css**: The CSS file that styles the web page. It defines the layout, appearance, and animations used in the application.
-
-- **currency.js**: The JavaScript file that handles the currency conversion logic. It uses an API to fetch exchange rate data and perform the currency conversion.
-
-- **logo.png**: The project logo that is displayed in the header.
-
-- **back2.jpg**: The background image for the web page.
-
-## Getting Started
-
-1. Clone the repository to your local machine:
-   git clone <repository-url>
-
-2. Open the `index.html` file in your web browser to use the currency converter.
-
-3. Input the amount, select the source and target currencies, and click the "Convert" button to see the conversion result.
+- Features
+- Usage
+- Getting Started
+- File Structure
+- Authors
+- Website Link
 
 ## Features
 
-- **Currency Selection**: Users can choose the source and target currencies from the dropdown menus.
+- Currency conversion with real-time exchange rates.
+- About Us and Contact Us sections.
+- Interactive and responsive design.
+- Snowfall and cloud animations for visual appeal.
+- Form validation for user input.
 
-- **Conversion**: Clicking the "Convert" button will fetch the latest exchange rates and display the converted amount.
+## Usage
 
-- **Reset**: The "Reset" button allows users to clear the input fields and start a new conversion.
+To use the Global Currency Exchange website, follow these steps:
 
-- **Stylish Design**: The application has a visually appealing design with animations and a responsive layout.
+1. Visit the website by opening the `index.html` file in your web browser.
 
-## Dependencies
+2. Explore the various sections of the website, including:
+   - **About Us**: Learn about the company's mission and services.
+   - **Currency Converter**: Convert currencies with real-time rates.
+   - **Contact Us**: Send a message to the company.
 
-The project uses the ExchangeRate Vhttps://www.exchangerate-api.com/ API to fetch exchange rate data. You need to obtain an API key to make it work. Replace the `apiKey` variable in `currency.js` with your own API key.  Also logo was designed in Canva https://www.canva.com/.
+3. Fill out the currency conversion form and click the "Convert" button to calculate currency conversions.
 
-const apiKey = 'your-api-key'; 
-The project uses the ExchangeRate API to fetch exchange rate data. You need to obtain an API key to make it work. Replace the `apiKey` variable in `currency.js` with your own API key.
+4. Contact the company by filling out the form in the "Contact Us" section.
 
-## Customization
+## Getting Started
 
-You can customize the application by modifying the HTML, CSS, and JavaScript files. Update the styles in `currency.css`, and modify the behavior in `currency.js` to fit your needs.
+To get started with this project, you can follow these steps:
 
-## Contributing
+1. Clone this repository to your local machine:
 
-Feel free to contribute to this project by opening issues, submitting pull requests, or suggesting improvements. Your contributions are welcome!
+   ```bash
+   git clone https://github.com/yourusername/global-currency-exchange.git
+   ```
 
-## License
+2. Open the project directory:
 
-This project is open-source and available under the [MIT License](LICENSE).
+   ```bash
+   cd global-currency-exchange
+   ```
 
-Enjoy using the Currency Converter! If you have any questions or encounter any issues, please don't hesitate to reach out to the project contributors
+3. Open the `index.html` file in your web browser to view the website.
 
+4. Customize the project by modifying the HTML, CSS, and JavaScript files as needed.
+
+## File Structure
+
+The project files are organized as follows:
+
+- `index.html`: The main HTML file containing the website structure and content.
+- `snow.css`: CSS file for snowfall and cloud animations.
+- `new.css`: CSS file for general website styling.
+- `currency.js`: JavaScript file for currency conversion functionality.
+- `snow.js`: JavaScript file for snowfall and cloud animations.
+- `form-validation.js`: JavaScript file for form validation.
+- `airplane.png`: Image of an airplane for animation.
+- `cloud.png`: Image of a cloud for animation.
+- `snow.png`: Image of a snowflake for animation.
+
+## Authors
+
+- [Fatima Farhat]https://github.com/Fatima1964/Currency-Website
+
+
+## Website Link
