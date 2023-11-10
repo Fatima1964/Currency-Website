@@ -1,7 +1,4 @@
-/* Set the background and style for the entire page */
-
-
-/* Create a container for snowfall and clouds */
+/* Create a container for dollar sign and clouds */
 .snowfall-container {
     position: absolute;
     width: 100%;
@@ -90,12 +87,12 @@
     }
 }
 
-/* Style for the snowflake elements */
+/* Style for the dollar sign elements */
 .snowflake {
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url('images/dollar.png'); /* Replace 'snow.png' with your dollar sign image */
+    background-image: url('images/dollar.png'); /* Replace with dollar sign image */
     background-size: cover;
     animation: snowfall linear 10s infinite;
 }

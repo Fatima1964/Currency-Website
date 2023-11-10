@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Link to the 'snow.css' stylesheet for snowfall effect -->
+    <!-- Link to the 'new.css' stylesheet  -->
+    <link rel="stylesheet" type="text/css" href="contact.css"> 
+    <link rel="stylesheet" type="text/css" href="rain.css"> 
+    <title>Contact Us</title>
+    <style>
+        /* Style for a scrollable content area with a fixed height */
+        .scrollable-content {
+            overflow: auto;
+            height: 800px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="header">
+            <!-- Logo -->
+            <img src="Images/logo1.png" alt="Logo" class="animated-logo">
+            
+            <!-- Navigation Links -->
+            <ul class="header-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="notepad.html">Notepad</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Snowfall Container -->
+    <div class="snowfall-container">
+        <!-- Snowfall container with clouds and an airplane for design purposes -->
+        <div class="cloud"></div>
+        <h3 class="title"></h3>
+        <div class="cloud2"></div>
+        <div class="cloud3"></div>
+        <div class="airplane"></div>
+    </div>
+
+    <!-- Contact Us Section -->
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <!-- Contact Form -->
+        <form id="contact-form">
+            <!-- Input fields for Name, Email, and Message -->
+            <input type="text" id="name" required placeholder="*Name:">
+            <input type="email" id="email" required placeholder="*Email:">
+            <textarea rows="2" cols="10" id="message" required placeholder="*Message:"></textarea>
+            
+            <!-- Submit Button -->
+            <button type="submit" id="submit">Submit</button>
+        </form>
+        
+        <!-- Footer Section -->
+        <footer>
+            <div>
+                <!-- Home Icon linking to the homepage -->
+                <a class="home-icon" href="index.html">
+                    <img src="images/home.png" alt="home icon" width="75px" height="75px"></a>
+            </div>
+        </footer>
+    </div>
+
+    <!-- JavaScript files for functionality -->
+    <script src="contact.js"></script>
+    <script src="form-validation"></script>
+</body>
+</html>

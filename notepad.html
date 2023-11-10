@@ -1,41 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Meta tags for character set  -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Link to the external stylesheet -->
     <link rel="stylesheet" type="text/css" href="notepad.css">
+    
+    <!-- Title of the webpage -->
     <title>Notepad</title>
 </head>
 <body>
+    <!-- Main container for the notepad -->
     <div class="container">
+        <!-- Main heading of the notepad -->
         <h1>My Notepad</h1>
+        
+        <!-- Notepad sections with left and right panels -->
         <div class="notepad">
+            <!-- Left panel for entering notes -->
             <div class="left-panel">
+                <!-- Textarea for entering notes -->
                 <textarea id="note-text" rows="5" placeholder="Enter your note here..."></textarea>
+                
+                <!-- Button to save the note -->
                 <button id="save">Save Note</button>
             </div>
+            
+            <!-- Right panel for displaying saved notes -->
             <div class="right-panel">
+                <!-- Container for displaying the list of notes -->
                 <div id="notes-list">
                     <!-- Notes will be displayed here -->
                 </div>
             </div>
         </div>
+        
+        <!-- Reminder section with input and button -->
         <div class="reminder">
-            
+            <!-- Label for the reminder date input -->
             <label for="reminder-date">Set a Reminder:</label>
+            
+            <!-- Input for selecting the reminder date and time -->
             <input type="datetime-local" id="reminder-date">
+            
+            <!-- Button to set the reminder -->
             <button id="set-reminder">Set Reminder</button>
         </div>
+        
+        <!-- Notification for reminders -->
         <div class="notification" id="reminder-message">This is your reminder</div>
 
-             
+        <!-- Footer section with a home icon linking to the homepage -->
         <footer>
             <a class="home-icon" href="index.html">
                 <img src="images/homeicon.png" alt="home icon" width="125px" height="125px"></a>
         </footer> 
-           
+    </div>
+
+    <!-- Script tags for linking JavaScript files -->
     <script src="notepad.js"></script>
     <script src="reminder.js"></script>
-
 </body>
 </html>

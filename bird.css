@@ -1,6 +1,3 @@
-/* Set the background and style for the entire page */
-
-
 /* Create a container for snowfall and clouds */
 .snowfall-container {
     position: absolute;
@@ -56,7 +53,7 @@
     height: 100px;
     background-image: url('images/cloud.png'); /* cloud image */
     background-size: cover;
-    animation: cloud3Move linear 15s infinite; /* Adjust the animation as needed */
+    animation: cloud3Move linear 15s infinite; /* Adjusted the animation  */
 }
 
 /* Animation for the third cloud */
@@ -69,18 +66,18 @@
     }
 }
 
-/* Style for the airplane element */
+/* Style for the bird element */
 .airplane {
     position: absolute;
     right: -200px; /* Start it off-screen to the right */
-    width: 200px;
-    height: 100px;
-    background-image: url('images/airplane.png');
+    width: 75px;
+    height: 75px;
+    background-image: url('images/flying-bird-gif-bird.gif');
     background-size: cover;
     animation: airplaneMove linear 30s infinite; /* Set animation duration and 'infinite' iteration */
 }
 
-/* Animation for the airplane element */
+/* Animation for the bird element */
 @keyframes airplaneMove {
     0% {
         right: -200px; /* Start off-screen to the right */
@@ -95,12 +92,12 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url('images/dollar.png'); /* Replace 'snow.png' with your dollar sign image */
+    background-image: url('images/dollar.png'); /* dollar image */
     background-size: cover;
     animation: snowfall linear 10s infinite;
 }
 
-/* Animation for the snowfall (falling dollar sign) */
+/* Animation for the snowfall (falling dollars) */
 @keyframes snowfall {
     0% {
         transform: translateY(0) translateX(0);

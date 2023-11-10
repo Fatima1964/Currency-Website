@@ -1,0 +1,115 @@
+/* Reset the top margin for the body element */
+body {
+    background-color: #0f1011;
+    margin-top: 0px;
+}
+/*Styles for header*/
+.header {
+    background-color: white;
+    color: #080505;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
+}
+
+/* Style for the animated logo */
+.animated-logo {
+    animation: twirl 4s linear infinite; /* Animation for the twirling effect */
+}
+
+/* Define keyframes for the twirl animation */
+@keyframes twirl {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Style for the menu links */
+.header-links {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+    display: flex; /* Displayed menu items in a row */
+    justify-content: center; /* Centered align menu items horizontally */
+}
+
+/* Style for the menu links */
+.header-links li {
+    margin: 0 20px; /* Added spacing between menu items */
+}
+
+/* Style for the menu links */
+.header-links a {
+    text-decoration: none;
+    color: #0f0c0c;
+    font-size: 20px;
+    padding: 20px;
+}
+
+/* Background color for the body */
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 700px;
+    height: 400px;
+    background: conic-gradient(#0f0f10);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    margin: 20px auto;
+    padding: 20px;
+    box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
+    transition: transform 0.3s ease-in-out;
+    transform: rotate(0deg);
+    color: #f1f2f2;
+    margin-bottom: 10em;
+}
+
+/* Style for input fields, email, and textarea */
+.container input[type="text"],
+.container input[type="email"],
+.container textarea {
+    padding: 15px;
+    width: 60%;
+    margin: 10px auto;
+    border: 1px solid #121111;
+    border-radius: 5px;
+    margin-left: 125px;
+    
+}
+
+/* Style for buttons */
+.container button {
+    padding: 15px;
+    width: 50%;
+    border: 1px solid #090909;
+    border-radius: 5px;
+    margin-left: 180px;
+}
+
+/* Style for buttons on hover */
+#submit {
+    background-color: #f0f3f6;
+    font-size: 18px;
+    color: #0c0909;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    padding: 20px 20px;
+    margin-left: 170px;
+}
+
+/* Hover effect for buttons */
+.container button:hover {
+    background-color: #a79dc7;
+}
+
+/* Home icon styling */
+.home-icon {
+    position: absolute;
+    bottom: -40px; 
+    left: 45%; 
+    cursor: pointer;
+}

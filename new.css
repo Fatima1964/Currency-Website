@@ -1,79 +1,53 @@
 /* Reset the top margin for the body element */
 body {
-    margin-top: 0px;
+     background-color: #0f1011;
+     margin-top: 0px;
 }
 
-/* Style for the header section */
-header {
-    background-color: rgb(11, 11, 10);
-    padding: 10px 0px;
-    color: #0f0f10;
+/* Style for the header */
+.header {
+    background-color: white;
+    color: #080505;
+    padding: 10px;
+    text-align: center;
+    font-size: 24px;
 }
 
-/* Reset list styling for the navigation */
-nav ul {
+/* Style for the animated logo */
+.animated-logo {
+    animation: twirl 4s linear infinite; /* Animation for the twirling effect */
+}
+
+/* Define keyframes for the twirl animation */
+@keyframes twirl {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Style for the menu links */
+.header-links {
     list-style: none;
     padding: 0;
-    margin: 0;
-}
-
-/* Style for navigation links */
-nav ul li a {
-    text-decoration: none;
-    color: #fff;
-    font-weight: bold;
-    font-size: 20px;
-    padding: 30px;
-    margin-left: 250px;
-}
-
-/* Style for the logo */
-.logo {
-    display: flex;
-    flex-direction: column;
-    width: 100px;
-    height: 70px;
-    background: conic-gradient(#0f0f10, #b1becb, #bc9cca);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease-in-out;
-    transform: rotate(0deg);
-    color: #eceff3;
-    margin-left: 46%;
-    margin-top: 20px;
-    font-size: 22px;
-    transition: transform 0.3s;
-}
-
-/* Hover effect for the logo */
-.logo:hover {
-    transform: scale(1.4);
-}
-
-/* Background color for the body */
-body {
-    background-color: #0f1011;
-    /* Consider uncommenting and specifying an image URL as background */
-    /* background-image: url('white.avif'); */
-}
-
-/* Style for h2 elements */
-h2 {
-    color: #f3f6f8;
-}
-
-/* Style for h1 elements */
-h1 {
-    font-size: 24px;
-    color: #101111;
     text-align: center;
+    display: flex; /* Displayed menu items in a row */
+    justify-content: center; /* Centered align menu items horizontally */
 }
 
-/* Style for header links */
+/* Style for the menu links */
+.header-links li {
+    margin: 0 20px; /* Added spacing between menu items */
+}
+
+/* Style for the menu links */
 .header-links a {
-    text-align: center;
-    margin: 70px;
+    text-decoration: none;
+    color: #0f0c0c;
+    font-size: 20px;
+    padding: 20px;
 }
 
 /* Style for the welcome container */
@@ -93,6 +67,7 @@ h1 {
     color: #f0f4f7;
     text-align: center;
     font-size: 24px;
+    letter-spacing: 2px;
     padding: 20px;
 }
 
@@ -111,9 +86,10 @@ h1 {
     transition: transform 0.3s ease-in-out;
     transform: rotate(0deg);
     font-size: 16px;
+    color:#eef2f6;
 }
 
-/* Style for general containers */
+/* Style for containers */
 .container {
     display: flex;
     flex-direction: column;
@@ -131,42 +107,6 @@ h1 {
     color: #f0f4f7;
 }
 
-/* Style for input fields, email, and textarea */
-.container input[type="text"],
-.container input[type="email"],
-.container textarea {
-    padding: 15px;
-    width: 60%;
-    margin: 10px auto;
-    border: 1px solid #121111;
-    border-radius: 5px;
-    margin-left: 125px;
-}
-
-/* Style for buttons */
-.container button {
-    padding: 15px;
-    width: 50%;
-    border: 1px solid #090909;
-    border-radius: 5px;
-    margin-bottom: 30px;
-    margin-left: 180px;
-}
-
-/* Style for buttons on hover */
-#submit {
-    background-color: #2f77c4;
-    color: #f0eaea;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    padding: 20px 20px;
-}
-
-/* Hover effect for buttons */
-.container button:hover {
-    background-color: #9879f5;
-}
-
 /* Style for input fields and selects */
 input[type="number"],
 select {
@@ -180,33 +120,34 @@ select {
 
 /* Style for the 'Convert' button */
 button {
-    background-color: #2f77c4;
-    color: #fff;
+    background-color: #f6f7f8;
+    color: #0f0d0d;
     border: none;
-    padding: 10px 30px;
+    padding: 10px 180px;
     cursor: pointer;
     border-radius: 5px;
-    border: 1px solid #0d0e0f;
+    border: 1px solid #dee6ef;
     font-size: 18px;
     transition: background-color 0.3s;
 }
 
 /* Hover effect for the 'Convert' button */
 button:hover {
-    background-color: #a079c7;
+    background-color: #b9aac8;
 }
 
 /* Style for the result output */
 p#result {
     display: flex;
     width: 15em;
-    height: 4em;
+    height: 5em;
     background: conic-gradient(#0f0f10);
     border-radius: 50%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 20px auto;
+    margin-bottom: 200px;
     padding: 20px;
     border: 4px solid white;
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
@@ -214,6 +155,7 @@ p#result {
     transform: rotate(0deg);
     font-size: 30px;
     color: #eef2f6;
+
 }
 
 /* Styling for the reset button */
@@ -227,4 +169,7 @@ p#result {
     transform: rotate(20deg);
 }
 
-
+.footnote {
+    position: absolute;
+    color:#eceff3;
+}

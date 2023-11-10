@@ -8,25 +8,30 @@ document.addEventListener('DOMContentLoaded', () => {
         if (reminderDate > new Date()) {
             const timeRemaining = reminderDate - new Date();
 
-            // Request permission when the button is clicked
             Notification.requestPermission().then(function (permission) {
                 if (permission === "granted") {
-                    // Retrieve saved notes and use them as the notification message
                     const savedNotes = getSavedNotes();
-                    const message = savedNotes.join('\n'); // Join notes with line breaks
 
-                    // Display the notification
-                    setTimeout(() => {
-                        displayNotification("Reminder", message);
-                        console.log("Reminder Message:", message);
-                        
-                    }, timeRemaining);
+                    if (savedNotes.length > 0) {
+                        displayNotificationAfterDelay(savedNotes, timeRemaining);
+                    } else {
+                        alert("No notes to remind you about.");
+                    }
                 }
             });
         } else {
             alert("Please select a future date and time for your reminder.");
         }
     });
+
+    function displayNotificationAfterDelay(savedNotes, timeRemaining) {
+        const message = savedNotes.join('\n');
+
+        setTimeout(() => {
+            displayNotification("Reminder", message);
+            console.log("Reminder Message:", message);
+        }, timeRemaining);
+    }
 
     function displayNotification(title, message) {
         if ('Notification' in window) {

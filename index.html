@@ -5,85 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Link to the 'snow.css' stylesheet for snowfall effect -->
     <link rel="stylesheet" type="text/css" href="snow.css">
-    <!-- Link to the 'new.css' stylesheet (consider adding a description for this stylesheet) -->
+    <!-- Link to the 'new.css' stylesheet  -->
     <link rel="stylesheet" type="text/css" href="new.css"> 
     <title>Global Currency Exchange</title>
     <style>
         /* Style for a scrollable content area with a fixed height */
         .scrollable-content {
             overflow: auto;
-            height: 400px;
+            height: 800px;
         }
     </style>
-</head>
+</head> 
 <body>
+
+    <!-- Header Section -->
     <header>
-        <nav>
-            <ul>
-                <!-- Header section containing the logo and navigation links -->
-                <div class="header">
-                    <h1>Global Currency Exchange</h1>
-                    <div class="logo">GCE</div>
-                    <div class="header-links">
-                        <a href="#about-us">About Us</a>
-                        <a href="#contact">Contact Us</a>
-                        <a href="notepad.html">Notepad</a>
-                    </div>
-                </div>
+        <div class="header">
+            <!-- Logo -->
+            <img src="Images/logo1.png" alt="Logo" class="animated-logo">
+            
+            <!-- Navigation Links -->
+            <ul class="header-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="aboutus.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li><a href="notepad.html">Notepad</a></li>
             </ul>
-        </nav>
+        </div>
     </header>
-    
+
+    <!-- Main Content Section -->
     <div class="snowfall-container">
         <!-- Snowfall container with clouds and an airplane for design purposes -->
         <div class="cloud"></div>
-        <h3 class="title">Global</h3>
+        <h3 class="title"></h3>
         <div class="cloud2"></div>
         <div class="cloud3"></div>
         <div class="airplane"></div>
     </div>
 
     <div class="scrollable-content">
+        <!-- Welcome Section -->
         <div class="welcome-container" id="about-us">
             <!-- Welcome message section -->
-            <h3>"Your World, Your Currency, Our Expertise."</h3>
+            <h3>"WELCOME!"</h3>
             <p class="welcome-message">
                 Are you ready to embark on a journey of seamless currency conversion?
                 "Welcome to Global Currency Exchange! Your trusted partner for seamless currency conversion.
-                Whether you're traveling, investing, or sending money abroad, we've got your currency needs covered!"
+                Whether you're traveling, investing, or sending money abroad, we've got your conversion needs covered!"
             </p>
         </div>
 
+        <!-- Currency Converter Section -->
         <div class="converter">
-            <!-- Currency converter section -->
             <h2>Currency Converter</h2>
+            
+            <!-- Input fields for amount and currency selection -->
             <input type="number" id="amount" placeholder="Amount">
             <select id="fromCurrency"></select>
             <select id="toCurrency"></select>
+
+            <!-- Convert and Reset buttons -->
             <button id="convert">Convert</button>
             <button id="reset">Reset</button>
         </div>
 
+        <!-- Display the conversion result here -->
         <div class="exchange">
-            <!-- Display the conversion result here -->
             <p class="conversion" id="result">Conversion</p>
         </div>
-
-        <div class="container" id="contact">
-            <!-- Contact Us section -->
-            <h2>Contact Us</h2>
-<form id="contact-form">
-    <input type="text" id="name" required placeholder="*Name:">
-    <input type="email" id="email" required placeholder="*Email:">
-    <textarea rows="2" cols="10" id="message" required placeholder="*Message:"></textarea>
-    <button type="submit" id="submit">Submit</button>
-</form>
-
-        </div>
     </div>
+
+    <!-- Footer Section -->
+    <footer class="footnote">Fatima@2023</footer>
+
     <!-- JavaScript files for functionality -->
     <script src="currency.js"></script>
     <script src="snow.js"></script>
-    <script src="form-validation.js"></script>
 </body>
 </html>

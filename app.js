@@ -1,13 +1,17 @@
+
+// Import required modules
 const express = require('express');
 const axios = require('axios');
+
+// Create an Express application
 const app = express();
 const port = 3000;
 
+// Middleware to parse JSON request bodies
 app.use(express.json());
 
-// API Base URL (Replace with your API URL)
+// Define the API Base URL (Replace with your API URL)
 const apiUrl = 'https://jsonplaceholder.typicode.com';
-
 
 // GET Request to Retrieve Tasks
 app.get('/tasks', async (req, res) => {
@@ -58,6 +62,7 @@ app.delete('/tasks/:id', async (req, res) => {
   }
 });
 
+// Start the Express server
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });
