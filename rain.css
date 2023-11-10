@@ -11,7 +11,7 @@
     position: absolute;
     width: 200px; /* Adjust the width and height for the clouds */
     height: 100px;
-    background-image: url('images/cloud.png'); /* cloud image */
+    background-image: url('Images/cloud.png'); /* cloud image */
     background-size: cover;
     animation: cloudMove linear 9s infinite; /* Adjust the animation as needed */
 }
@@ -31,7 +31,7 @@
     position: absolute;
     width: 200px; /* Adjust the width and height for the clouds */
     height: 100px;
-    background-image: url('images/cloud.png'); /* cloud image */
+    background-image: url('Images/cloud.png'); /* cloud image */
     background-size: cover;
     animation: cloud2Move linear 12s infinite; /* Adjust the animation as needed */
 }
@@ -51,7 +51,7 @@
     position: absolute;
     width: 200px; /* Adjust the width and height for the clouds */
     height: 100px;
-    background-image: url('images/cloud.png'); /* cloud image */
+    background-image: url('Images/cloud.png'); /* cloud image */
     background-size: cover;
     animation: cloud3Move linear 15s infinite; /* Adjust the animation as needed */
 }
@@ -72,7 +72,7 @@
     right: -200px; /* Start it off-screen to the right */
     width: 200px;
     height: 100px;
-    background-image: url('images/airplane.png');
+    background-image: url('Images/airplane.png');
     background-size: cover;
     animation: airplaneMove linear 30s infinite; /* Set animation duration and 'infinite' iteration */
 }
@@ -92,7 +92,7 @@
     position: absolute;
     width: 20px;
     height: 20px;
-    background-image: url('images/dollar.png'); /* Replace with dollar sign image */
+    background-image: url('Images/dollar.png'); /* Replace with dollar sign image */
     background-size: cover;
     animation: snowfall linear 10s infinite;
 }
