@@ -120,7 +120,7 @@ select {
 
 /* Style for the 'Convert' button */
 button {
-    background-color: #f6f7f8;
+    background-color:#90e0ef;
     color: #0f0d0d;
     border: none;
     padding: 10px 180px;
@@ -133,7 +133,7 @@ button {
 
 /* Hover effect for the 'Convert' button */
 button:hover {
-    background-color: #b9aac8;
+    background-color: #0cbeeb;
 }
 
 /* Style for the result output */
