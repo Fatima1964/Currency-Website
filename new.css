@@ -64,7 +64,7 @@ body {
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease-in-out;
     transform: rotate(0deg);
-    color: #f0f4f7;
+    color: #1090f1;
     text-align: center;
     font-size: 24px;
     letter-spacing: 2px;
@@ -86,7 +86,7 @@ body {
     transition: transform 0.3s ease-in-out;
     transform: rotate(0deg);
     font-size: 16px;
-    color:#eef2f6;
+    color:#1090f1;
 }
 
 /* Style for containers */
@@ -120,7 +120,7 @@ select {
 
 /* Style for the 'Convert' button */
 button {
-    background-color:#90e0ef;
+    background-color:#1090f1;
     color: #0f0d0d;
     border: none;
     padding: 10px 180px;
@@ -154,7 +154,7 @@ p#result {
     transition: transform 0.3s ease-in-out;
     transform: rotate(0deg);
     font-size: 30px;
-    color: #eef2f6;
+    color:#1090f1;
 
 }
 

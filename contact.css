@@ -64,7 +64,7 @@ body {
     box-shadow: 0 0 60px rgba(0, 0, 0, 0.6);
     transition: transform 0.3s ease-in-out;
     transform: rotate(0deg);
-    color: #f1f2f2;
+    color: #1090f1;
     margin-bottom: 10em;
 }
 
@@ -92,7 +92,7 @@ body {
 
 /* Style for buttons on hover */
 #submit {
-    background-color:#90e0ef;
+    background-color:#1090f1;
     font-size: 18px;
     color: #0c0909;
     cursor: pointer;
